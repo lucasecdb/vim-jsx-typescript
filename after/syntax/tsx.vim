@@ -170,19 +170,7 @@ highlight def link tsxGenerics typescriptEndColons
 highlight def link tsxTypeBraces htmlTag
 highlight def link tsxTypes typescriptEndColons
 
-" Custom React Highlights
-syn keyword ReactState state nextState prevState setState
-" Then EITHER (define your own colour scheme):
-" OR (make the colour scheme match an existing one):
-" hi link ReactKeywords typescriptRComponent
-syn keyword ReactProps props defaultProps ownProps nextProps prevProps
-syn keyword Events e event target value
-syn keyword ReduxKeywords dispatch payload
-syn keyword WebBrowser window localStorage
-syn keyword ReactLifeCycleMethods componentWillMount shouldComponentUpdate componentWillUpdate componentDidUpdate componentWillReceiveProps componentWillUnmount componentDidMount
-
 let b:current_syntax = 'typescript.tsx'
 
 let &cpo = s:tsx_cpo
 unlet s:tsx_cpo
-
