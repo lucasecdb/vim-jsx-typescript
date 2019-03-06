@@ -82,6 +82,7 @@ syntax region tsxGenerics
     \ matchgroup=tsxTypeBraces start=+\([a-zA-Z0-9]\)\@<=[<]+
     \ matchgroup=tsxTypeBraces end=+>+
     \ contains=tsxTypes,tsxGenerics
+    \ contained
     \ extend
 
 syntax match tsxTypes /[a-zA-Z0-9]/
